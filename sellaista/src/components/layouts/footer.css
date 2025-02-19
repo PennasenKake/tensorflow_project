@@ -9,12 +9,22 @@
     flex: 1; /* Varmistaa, että logo vie oman tilansa */
 }
 
+/* Lisää seuraavat säännöt bodylle */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Varmistaa, että body on vähintään näytön korkuinen */
+    margin: 0; /* Poistaa oletusmarginaalit */
+}
+
+/* Muuta footerin asettelua */
 footer {
     display: flex;
     flex-direction: column; /* Muuta suunta pystysuoraksi */
     align-items: center; /* Keskitä sisältö */
     background-color: #102538; /* Taustaväri */
     padding: 20px; /* Lisää tilaa */
+    margin-top: auto; /* Työntää footerin alas, jos sisältöä on vähemmän kuin näytön korkeus */
 }
 
 .links-container {
